@@ -1,7 +1,6 @@
 /ask-klara-ai
    /public
       /images
-      - favicon.svg
 
    /src
       /actions
@@ -15,17 +14,16 @@
          - page.tsx
       
       /constants
-         - 
+      
       /context
-         - 
+      
       /hooks
-         - 
+      
       /icons
-         - 
+      
       /lib
-         - 
+      
       /schemas
-         - 
 
       -middleware.ts
       

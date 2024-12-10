@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ask KlaraAI Support Chatbot Theme Schema */
+
+    /* Primary Colors */
+    primary: {
+      main: '#1A5F7A',      // Deep Neural Blue
+      light: '#2C7CA1',     // Lighter variation
+      dark: '#0E3C5C',      // Darker variation
+      contrastText: '#FFFFFF'
+    },
+    secondary: {
+      main: '#4FBDBA',      // Soft AI Teal
+      light: '#6FCCC9',     // Lighter variation
+      dark: '#2E7471',      // Darker variation
+      contrastText: '#FFFFFF'
+    },
+
+    /* Neutral Colors */
+    neutral: {
+      100: '#F5F5F5',       // Almost white background
+      200: '#E0E0E0',       // Light gray
+      300: '#5C5C5C',       // Subtle gray
+      400: '#3A3A3A',       // Dark gray
+      500: '#1E1E1E'        // Almost black text
+    },
+
+    /* Background and Surface Colors */
+    background: {
+      default: '#FFFFFF',   // Crisp White
+      paper: '#F9F9F9',     // Slight off-white for cards/surfaces
+      subtle: '#F0F0F0'     // Light gray for secondary backgrounds
+    },
+
+    /* Text Colors */
+    text: {
+      primary: '#1E1E1E',   // Nearly black for primary text
+      secondary: '#5C5C5C', // Subtle gray for secondary text
+      disabled: '#A0A0A0'   // Disabled state text
+    },
+
+    /* Status Colors */
+    status: {
+      success: {
+        main: '#2ECC71',    // Success Green
+        light: '#58D68D',
+        dark: '#1E8449',
+        contrastText: '#FFFFFF'
+      },
+      warning: {
+        main: '#F39C12',    // Caution Yellow
+        light: '#F5B041',
+        dark: '#B7650C',
+        contrastText: '#FFFFFF'
+      },
+      error: {
+        main: '#E74C3C',    // Alert Red
+        light: '#EC7063',
+        dark: '#B03A2E',
+        contrastText: '#FFFFFF'
+      },
+      info: {
+        main: '#9B59B6',    // Soft Lavender
+        light: '#AF7AC5',
+        dark: '#6C3483',
+        contrastText: '#FFFFFF'
+      }
+    },
+
+    // Interaction States
+    interaction: {
+      hover: 'rgba(79, 189, 186, 0.1)',  // Teal with low opacity
+      focus: 'rgba(26, 95, 122, 0.2)',   // Blue with medium opacity
+      selected: 'rgba(79, 189, 186, 0.2)' // Teal with medium opacity
+    }
+  },
+
+  dark: {
+    // Primary Colors
+    primary: {
+      main: '#4FBDBA',      // Soft AI Teal becomes main in dark mode
+      light: '#6FCCC9',     // Lighter variation
+      dark: '#2E7471',      // Darker variation
+      contrastText: '#FFFFFF'
+    },
+    secondary: {
+      main: '#1A5F7A',      // Deep Neural Blue becomes secondary
+      light: '#2C7CA1',     // Lighter variation
+      dark: '#0E3C5C',      // Darker variation
+      contrastText: '#FFFFFF'
+    },
+
+    // Neutral Colors
+    neutral: {
+      100: '#1E1E1E',       // Almost black background
+      200: '#2A2A2A',       // Dark gray
+      300: '#3E3E3E',       // Medium dark gray
+      400: '#5C5C5C',       // Subtle gray
+      500: '#E0E0E0'        // Light text
+    },
+
+    // Background and Surface Colors
+    background: {
+      default: '#121212',   // Deep dark background
+      paper: '#1E1E1E',     // Slightly lighter for surfaces
+      subtle: '#2A2A2A'     // Medium dark for secondary backgrounds
+    },
+
+    // Text Colors
+    text: {
+      primary: '#E0E0E0',   // Light text for primary
+      secondary: '#A0A0A0', // Muted gray for secondary text
+      disabled: '#6C6C6C'   // Disabled state text
+    },
+
+    // Status Colors (slightly adjusted for dark mode contrast)
+    status: {
+      success: {
+        main: '#2ECC71',    // Success Green
+        light: '#58D68D',
+        dark: '#1E8449',
+        contrastText: '#FFFFFF'
+      },
+      warning: {
+        main: '#F39C12',    // Caution Yellow
+        light: '#F5B041',
+        dark: '#B7650C',
+        contrastText: '#FFFFFF'
+      },
+      error: {
+        main: '#E74C3C',    // Alert Red
+        light: '#EC7063',
+        dark: '#B03A2E',
+        contrastText: '#FFFFFF'
+      },
+      info: {
+        main: '#9B59B6',    // Soft Lavender
+        light: '#AF7AC5',
+        dark: '#6C3483',
+        contrastText: '#FFFFFF'
+      }
+    },
+
+    // Interaction States
+    interaction: {
+      hover: 'rgba(79, 189, 186, 0.2)',  // Teal with low opacity
+      focus: 'rgba(26, 95, 122, 0.3)',   // Blue with medium opacity
+      selected: 'rgba(79, 189, 186, 0.3)' // Teal with medium opacity
+    }
+  }
+};
+
+// Utility function to switch between light and dark modes
+export function toggleThemeMode(currentMode: 'light' | 'dark') {
+  return currentMode === 'light' ? 'dark' : 'light';
+}
+
+// Type definition for theme structure
+export type ThemeMode = 'light' | 'dark';
+export type ColorToken = keyof typeof themeSchema.light;

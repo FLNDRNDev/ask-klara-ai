@@ -21,65 +21,65 @@ body {
 
 @layer base {
 	:root {
-		--background: 0 0% 100%; /* #FFFFFF */
-		--foreground: 28 10% 12%; /* #1E1E1E */
+		--background: 0 0% 100%;
+		--foreground: 222.2 84% 4.9%;
 
-		--card: 0 0% 100%; /* #FFFFFF */
-		--card-foreground: 28 10% 12%; /* #1E1E1E */
+		--card: 0 0% 100%;
+		--card-foreground: 222.2 84% 4.9%;
 
-		--popover: 0 0% 100%; /* #FFFFFF */
-		--popover-foreground: 28 10% 12%; /* #1E1E1E */
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 84% 4.9%;
 
-		--primary: 196 66% 30%; /* #1A5F7A */
-		--primary-foreground: 0 0% 100%; /* #FFFFFF */
+		--primary: 222.2 47.4% 11.2%;
+		--primary-foreground: 210 40% 98%;
 
-		--secondary: 177 51% 60%; /* #4FBDBA */
-		--secondary-foreground: 196 66% 30%; /* #1A5F7A */
+		--secondary: 210 40% 96.1%;
+		--secondary-foreground: 222.2 47.4% 11.2%;
 
-		--muted: 177 51% 60%; /* #4FBDBA */
-		--muted-foreground: 210 8% 28%; /* #5C5C5C */
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215.4 16.3% 46.9%;
 
-		--accent: 177 51% 60%; /* #4FBDBA */
-		--accent-foreground: 196 66% 30%; /* #1A5F7A */
+		--accent: 210 40% 96.1%;
+		--accent-foreground: 222.2 47.4% 11.2%;
 
-		--destructive: 0 78% 58%; /* #E74C3C */
-		--destructive-foreground: 0 0% 100%; /* #FFFFFF */
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 40% 98%;
 
-		--border: 210 14% 88%; /* #E0E0E0 */
-		--input: 210 14% 88%; /* #E0E0E0 */
-		--ring: 196 66% 30%; /* #1A5F7A */
+		--border: 214.3 31.8% 91.4%;
+		--input: 214.3 31.8% 91.4%;
+		--ring: 222.2 84% 4.9%;
 
 		--radius: 0.5rem;
 	}
 
 	.dark {
-		--background: 210 12% 10%; /* #121212 */
-		--foreground: 210 14% 88%; /* #E0E0E0 */
+		--background: 222.2 84% 4.9%;
+		--foreground: 210 40% 98%;
 
-		--card: 210 12% 10%; /* #121212 */
-		--card-foreground: 210 14% 88%; /* #E0E0E0 */
+		--card: 222.2 84% 4.9%;
+		--card-foreground: 210 40% 98%;
 
-		--popover: 210 12% 10%; /* #121212 */
-		--popover-foreground: 210 14% 88%; /* #E0E0E0 */
+		--popover: 222.2 84% 4.9%;
+		--popover-foreground: 210 40% 98%;
 
-		--primary: 177 51% 60%; /* #4FBDBA */
-		--primary-foreground: 0 0% 100%; /* #FFFFFF */
+		--primary: 210 40% 98%;
+		--primary-foreground: 222.2 47.4% 11.2%;
 
-		--secondary: 196 66% 30%; /* #1A5F7A */
-		--secondary-foreground: 0 0% 100%; /* #FFFFFF */
+		--secondary: 217.2 32.6% 17.5%;
+		--secondary-foreground: 210 40% 98%;
 
-		--muted: 196 66% 30%; /* #1A5F7A */
-		--muted-foreground: 0 0% 100%; /* #FFFFFF */
+		--muted: 217.2 32.6% 17.5%;
+		--muted-foreground: 215 20.2% 65.1%;
 
-		--accent: 196 66% 30%; /* #1A5F7A */
-		--accent-foreground: 0 0% 100%; /* #FFFFFF */
+		--accent: 217.2 32.6% 17.5%;
+		--accent-foreground: 210 40% 98%;
 
-		--destructive: 0 62% 28%; /* #E74C3C */
-		--destructive-foreground: 0 0% 100%; /* #FFFFFF */
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 40% 98%;
 
-		--border: 210 12% 22%; /* #2A2A2A */
-		--input: 210 12% 22%; /* #2A2A2A */
-		--ring: 177 51% 70%; /* #6FCCC9 */
+		--border: 217.2 32.6% 17.5%;
+		--input: 217.2 32.6% 17.5%;
+		--ring: 212.7 26.8% 83.9%;
 	}
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .chat-bubble {
-	background-color: #F5F5F5;
+	background-color: #f1f1f1;
 	padding: 16px 28px;
 	-webkit-border-t-radius: 10px;
 	-webkit-border-bottom-left-radius: 2px;
@@ -111,7 +111,7 @@ body {
 }
 .typing .dot {
 	animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
-	background-color: #FFC989;
+	background-color: #ffc989;
 	border-radius: 50%;
 	height: 7px;
 	margin-right: 4px;
@@ -135,15 +135,15 @@ body {
 @keyframes mercuryTypingAnimation {
 	0% {
 		transform: translateY(0px);
-		background-color: #FFC989;
+		background-color: #ffc989;
 	}
 	28% {
 		transform: translateY(-7px);
-		background-color: #FFA947;
+		background-color: #ffa947;
 	}
 	44% {
 		transform: translateY(0px);
-		background-color: #F5F5F5;
+		background-color: #f1f1f1;
 	}
 }
 
@@ -158,7 +158,6 @@ body {
 	width: 100% !important;
 	border-radius: 20px;
 }
-
 
 
 /* ask KlaraAI Support Chatbot Theme Schema */

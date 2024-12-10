@@ -16,6 +16,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+
 # testing
 /coverage
 
@@ -24,13 +25,11 @@ yarn-error.log*
 /out/
 
 # production
-/build/
-/dist/
+/build
 
 # misc
 .DS_Store
 *.pem
-Thumbs.db
 
 # debug
 npm-debug.log*

@@ -1,7 +1,6 @@
 /ask-klara-ai
    /public
       /images
-      - favicon.svg
 
    /src
       /actions

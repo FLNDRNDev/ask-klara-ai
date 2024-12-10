@@ -10,12 +10,6 @@
 !.yarn/releases
 !.yarn/versions
 
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
 # testing
 /coverage
 
@@ -24,13 +18,11 @@ yarn-error.log*
 /out/
 
 # production
-/build/
-/dist/
+/build
 
 # misc
 .DS_Store
 *.pem
-Thumbs.db
 
 # debug
 npm-debug.log*
@@ -39,7 +31,6 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
-.env.local
 
 # vercel
 .vercel

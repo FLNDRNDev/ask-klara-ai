@@ -1,7 +1,6 @@
 /ask-klara-ai
    /public
       /images
-      - favicon.svg
 
    /src
       /actions
@@ -10,26 +9,19 @@
          /fonts
             - GeistMonoVF.woff
             - GeistVF.woff
-         - globals.css 
-         - layout.tsx 
-         - page.tsx
+            - globals.css 
+            - layout.tsx 
+            - page.tsx
       
       /constants
-         - 
-      /context
-         - 
-      /hooks
-         - 
-      /icons
-         - 
-      /lib
-         - 
-      /schemas
-         - 
-
-      -middleware.ts
       
-   - .env.local
+      /context
+      
+      /hooks
+      
+      /icon
+      
+   - .env
    - .eslintrc.json
    - .gitignore
    - bun.lockb
